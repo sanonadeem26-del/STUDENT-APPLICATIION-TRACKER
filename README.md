@@ -5,6 +5,7 @@
 1.	To develop an application tracker that lets students submit applications to the chairman/faculty and lets the concerned person update each application's status (Pending/Approved/Disapproved) and add comments.
 2.	To design a priority system that sorts applications into three categories (Urgent, Moderately Urgent, Low Urgency) so reviewers can handle time-sensitive applications first.
 3.	To implement role-based login and status notifications so that students see only their own applications and are alerted when a decision or comment is posted.
+
 **4. Tech Stack-**
 Frontend: react.js and Tailwind.css
 Backend: Node.js and Express.js
