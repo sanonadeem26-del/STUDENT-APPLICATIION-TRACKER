@@ -16,7 +16,7 @@ Notifications: Firebase cloud messaging
 Authentication: Supabase
 Deployment: Vercel
 
-**AI elements:**
+**5.AI elements-**
 1.	LLMs will be used for application generation and AI summarizing/AI writing.
 2.	NLPs will be used for classifications.
 
