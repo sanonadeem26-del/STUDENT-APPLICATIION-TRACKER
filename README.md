@@ -8,12 +8,12 @@ We are building an Application Tracker, a web portal where students submit appli
 2.	To design a priority system that sorts applications into three categories (Urgent, Moderately Urgent, Low Urgency) so reviewers can handle time-sensitive applications first.
 3.	To implement role-based login and status notifications so that students see only their own applications and are alerted when a decision or comment is posted.
 4. Tech Stack
-o	Frontend: react.js and Tailwind.css
-o	Backend: Node.js and Express.js
-	Database: Supabase
-	Notifications: Firebase cloud messaging
-	Authentication: Supabase
-	Deployment: Vercel
+Frontend: react.js and Tailwind.css
+Backend: Node.js and Express.js
+Database: Supabase
+Notifications: Firebase cloud messaging
+Authentication: Supabase
+Deployment: Vercel
 AI element:
 1.	LLMs will be used for application generation and AI summarizing/AI writing.
 2.	NLPs will be used for classifications.
