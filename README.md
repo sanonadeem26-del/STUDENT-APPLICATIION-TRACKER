@@ -1,4 +1,4 @@
-# STUDENT-APPLICATIION-TRACKER
+# STUDENT-APPLICATION-TRACKER
 **1. Problem Statement** - Student applications to the department are currently submitted on paper and followed up in person, so they can be delayed, lost, or forgotten, and the chairman has no single place to see everything pending. Students and admin staff both bear the cost: students keep returning to the office to ask for a status, and staff keep answering the same question. Since these applications involve important matters like course issues, attendance, and exemptions, losing or delaying them directly affects students' academics.
 
 **2. Basic Idea of Our Work** - We are building an Application Tracker, a web portal where students submit applications to the department and the chairman or concerned person reviews them. The reviewer updates the status (Pending / Approved / Disapproved) and can add comments. Students check the status online instead of visiting the admin office.
