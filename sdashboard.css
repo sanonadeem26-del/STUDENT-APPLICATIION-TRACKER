@@ -1,0 +1,235 @@
+.student-dashboard {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f3f6f8;
+    font-family: Arial, sans-serif;
+    color: #243047;
+}
+
+/* Sidebar */
+.student-sidebar {
+    width: 230px;
+    flex-shrink: 0;
+    background-color: #0f2f76;
+    color: white;
+    padding: 25px 15px;
+    box-sizing: border-box;
+}
+
+.student-sidebar h2 {
+    font-size: 21px;
+    margin: 5px 0 35px;
+    text-align: center;
+}
+
+.student-sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.student-sidebar nav a {
+    color: #e2eaff;
+    text-decoration: none;
+    padding: 13px 15px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.student-sidebar nav a:hover,
+.student-sidebar nav a.active {
+    background-color: #26756d;
+    color: white;
+}
+
+/* Main Content */
+.student-main {
+    flex: 1;
+    min-width: 0;
+    padding: 35px;
+}
+
+.student-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.student-header h1 {
+    color: #0f2f76;
+    margin: 0 0 10px;
+    font-size: 30px;
+}
+
+.student-header p {
+    color: #6b7280;
+    margin: 0;
+}
+
+.student-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #55a9a0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+/* Statistics Cards */
+.student-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.student-card {
+    background-color: white;
+    padding: 23px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #0000000d;
+    border-top: 4px solid #55a9a0;
+}
+
+.student-card h3 {
+    font-size: 15px;
+    color: #586174;
+    margin: 0 0 15px;
+}
+
+.student-number {
+    color: #0f2f76;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.student-card span {
+    color: #7b8494;
+    font-size: 13px;
+}
+
+/* Applications Table */
+.student-applications {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #0000000d;
+    overflow-x: auto;
+}
+
+.student-applications h2 {
+    color: #0f2f76;
+    font-size: 21px;
+    margin: 0 0 22px;
+}
+
+.student-applications table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.student-applications th,
+.student-applications td {
+    padding: 16px 12px;
+    border-bottom: 1px solid #e8edf2;
+    white-space: nowrap;
+}
+
+.student-applications th {
+    color: #657086;
+    font-size: 13px;
+    background-color: #f8fafc;
+}
+
+.student-applications td {
+    font-size: 14px;
+}
+
+.status {
+    display: inline-block;
+    padding: 6px 11px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status.pending {
+    background-color: #fff1cc;
+    color: #946200;
+}
+
+.status.approved {
+    background-color: #d9f5e8;
+    color: #18794e;
+}
+
+.status.rejected {
+    background-color: #ffe0e0;
+    color: #b42318;
+}
+
+/* New Application Button */
+.new-application-btn {
+    display: inline-block;
+    margin-top: 25px;
+    background-color: #0f2f76;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.new-application-btn:hover {
+    background-color: #26756d;
+}
+
+/* Responsive Layout */
+@media (max-width: 800px) {
+    .student-sidebar {
+        width: 180px;
+    }
+
+    .student-main {
+        padding: 20px;
+    }
+
+    .student-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+    .student-dashboard {
+        flex-direction: column;
+    }
+
+    .student-sidebar {
+        width: 100%;
+    }
+
+    .student-sidebar h2 {
+        margin-bottom: 20px;
+    }
+
+    .student-sidebar nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .student-main {
+        padding: 18px;
+    }
+
+    .student-header h1 {
+        font-size: 23px;
+    }
+}
